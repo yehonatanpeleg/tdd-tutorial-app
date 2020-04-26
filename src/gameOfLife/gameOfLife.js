@@ -20,6 +20,16 @@ function generateGrid(rows, cols) {
     }
   }
 
+  // Randomizing how many cells to wake up
+  let numberOfCellsToInitialize = Math.floor(Math.random() * (rows * cols));
+
+  // Randomizing which cells to wake up
+  for (let i = 0; i < numberOfCellsToInitialize; i++) {
+    let row = Math.floor(Math.random() * (rows - 1));
+    let col = Math.floor(Math.random() * (cols - 1));
+    grid[row][col].alive = true;
+  }
+
   return grid;
 }
 
@@ -49,7 +59,7 @@ function countAliveNeighbors(neighbors) {
   var aliveCount = 0;
 
   // Counting number of alive neighbors
-  for (neighbor of neighbors) {
+  for (let neighbor of neighbors) {
     if (neighbor.alive) {
       aliveCount++;
     }

@@ -1,0 +1,44 @@
+html {
+  background-image: -webkit-linear-gradient(to bottom, white 0%, #facd8a 100%);
+  background-image: -moz-linear-gradient(to bottom, white 0%, #facd8a 100%);
+  background-image: -o-linear-gradient(to bottom, white 0%, #facd8a 100%);
+}
+
+body {
+  font-family: Verdana, Ariel, Helvetica, Tahoma, sans-serif;
+  font-size: 100%;
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  margin: 15px auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+}
+
+.alive {
+  background-color: black;
+}
+
+.dead {
+  background-color: white;
+}
